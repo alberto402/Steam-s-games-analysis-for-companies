@@ -28,7 +28,7 @@ df_count_gen = sc.parallelize([[count_win, count_mac, count_lin]])\
 df_count.repartition(1).write.option("header", "true").csv("count_fun.csv", sep = ',')
 
 
-#Generar archivos para map-reduce
+#Generar archivos para map-reduce (genero)
 gen_win = fun_win.select("GenreIsNonGame", "GenreIsIndie", "GenreIsAction", "GenreIsAdventure", "GenreIsCasual", "GenreIsStrategy", "GenreIsRPG", "GenreIsSimulation", "GenreIsEarlyAccess", "GenreIsFreeToPlay", "GenreIsSports", "GenreIsRacing", "GenreIsMassivelyMultiplayer")
 
 gen_lin = fun_lin.select("GenreIsNonGame", "GenreIsIndie", "GenreIsAction", "GenreIsAdventure", "GenreIsCasual", "GenreIsStrategy", "GenreIsRPG", "GenreIsSimulation", "GenreIsEarlyAccess", "GenreIsFreeToPlay", "GenreIsSports", "GenreIsRacing", "GenreIsMassivelyMultiplayer")
@@ -38,3 +38,14 @@ gen_mac = fun_mac.select("GenreIsNonGame", "GenreIsIndie", "GenreIsAction", "Gen
 gen_win.repartition(1).write.option("header", "true").csv("win_genre.csv", sep = ',')
 gen_lin.repartition(1).write.option("header", "true").csv("lin_genre.csv", sep = ',')
 gen_mac.repartition(1).write.option("header", "true").csv("mac_genre.csv", sep = ',')
+
+#Generar archivos para map-reduce (categorias)
+cat_win = fun_win.select("CategorySinglePlayer", "CategoryMultiplayer", "CategoryCoop", "CategoryMMO", "CategoryInAppPurchase", "CategoryIncludeSrcSDK", "CategoryIncludeLevelEditor", "CategoryVRSupport")
+
+cat_lin = fun_lin.select("CategorySinglePlayer", "CategoryMultiplayer", "CategoryCoop", "CategoryMMO", "CategoryInAppPurchase", "CategoryIncludeSrcSDK", "CategoryIncludeLevelEditor", "CategoryVRSupport")
+
+cat_mac = fun_mac.select("CategorySinglePlayer", "CategoryMultiplayer", "CategoryCoop", "CategoryMMO", "CategoryInAppPurchase", "CategoryIncludeSrcSDK", "CategoryIncludeLevelEditor", "CategoryVRSupport")
+
+cat_win.repartition(1).write.option("header", "true").csv("win_categ.csv", sep = ',')
+cat_lin.repartition(1).write.option("header", "true").csv("lin_categ.csv", sep = ',')
+cat_mac.repartition(1).write.option("header", "true").csv("mac_categ.csv", sep = ',')
