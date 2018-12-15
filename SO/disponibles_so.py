@@ -9,6 +9,7 @@ spark = SparkSession.builder.master("local").appName("uno").config("spark.some.c
 df = spark.read.format("csv").option("header", "true").load("/Users/raqblanc/Desktop/games-features.csv")
 df = df.select(df.QueryName, df.GenreIsNonGame, df.GenreIsIndie, df.GenreIsAction, df.GenreIsAdventure, df.GenreIsCasual, df.GenreIsStrategy, df.GenreIsRPG, df.GenreIsSimulation, df.GenreIsEarlyAccess, df.GenreIsFreeToPlay, df.GenreIsSports, df.GenreIsRacing, df.GenreIsMassivelyMultiplayer, df.CategorySinglePlayer, df.CategoryMultiplayer, df.CategoryCoop, df.CategoryMMO, df.CategoryInAppPurchase, df.CategoryIncludeSrcSDK, df.CategoryIncludeLevelEditor, df.CategoryVRSupport, df.PCReqsHaveMin, df.LinuxReqsHaveMin, df.MacReqsHaveMin, df.PlatformWindows, df.PlatformLinux, df.PlatformMac)
 
+sc=SparkContext.getOrCreate()
 
 fun_win = df.where(col("PlatformWindows")== "True")
 count_win = fun_win.count()
