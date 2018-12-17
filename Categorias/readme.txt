@@ -1,0 +1,2 @@
+El objetivo de del programa es generar 1 documento por cada categoria, el cual contienen los titulos que tengan ese genero en concreto, su nota de Metacritic y su precio.
+Para el lanzamiento es necesario el fichero de datos games-features.csv
