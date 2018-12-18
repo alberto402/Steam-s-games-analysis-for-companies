@@ -11,6 +11,7 @@ Recomendacion:
 Procedimiento:
 
     Buscamos y lanzamos el archivo submit spark junto al archivo que queremos ejecutar
+    ./spark-submit fechas.py "path de games-features.csv"
 
 Finalidad:
 
