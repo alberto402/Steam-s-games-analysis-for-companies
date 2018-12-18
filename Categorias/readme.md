@@ -14,4 +14,4 @@ Procedimiento:
 
 Finalidad:
 
-	El objetivo de del programa es generar 1 documento por cada categoria, el cual contiene los titulos que tengan coincidan con ese genero en particular, su nota de Metacritic y su precio.
+	El objetivo de del programa es generar 1 documento por cada categoria, el cual contiene los titulos que coincidan con ese genero en particular, su nota de Metacritic y su precio.
