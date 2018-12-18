@@ -1,12 +1,12 @@
 
-Requisitos:
+#Requisitos
   - Tener instalado spark 
   - Tener descargado fichero de datos games-features.csv
   
-Antes de ejecutar:
+#Antes de ejecutar:
   - Revisar los *.py, cambiar "ruta" por el path donde se encuentren los *.csv
   
-Orden de ejecución:
+#Orden de ejecución:
   1) disponibles_so.py
       - Crea el fichero count_fun.csv, cuántos juegos funcionan en cada plataforma
       - Crea los ficheros win_genre.csv, lin_genre.csv y mac_genre.csv para map-reduce de categorías
