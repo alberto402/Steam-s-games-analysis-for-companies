@@ -4,7 +4,7 @@ Requisitos:
   - Tener descargado fichero de datos games-features.csv
   
 Antes de ejecutar:
-  - Revisar los .py, cambiar "ruta" por el path donde se encuentren los *.csv
+  - Revisar los *.py, cambiar "ruta" por el path donde se encuentren los *.csv
   
 Orden de ejecución:
   1) disponibles_so.py
@@ -21,4 +21,4 @@ Orden de ejecución:
   4) n_juegos_x_categoria.py
       - Crea el fichero category_so.csv, número de juegos de *x* género en y plataforma
   5) n_juegos_x_genero.py
-      - Crea el fichero genre_so.csv, Número de juegos de *x* categoría en *y* plataforma
+      - Crea el fichero genre_so.csv, número de juegos de *x* categoría en *y* plataforma
