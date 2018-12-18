@@ -1,9 +1,9 @@
 Requisitos:
-  -Tener instalado spark 
+  -Tener instalado spark
   -Es necesario el fichero de datos games-features.csv
+  
 Recomendacion:
-  Lanzarlo desde Linux (para que sea mas sencillo)
-
+Lanzarlo desde Linux (para que sea mas sencillo)
 Procedimiento:
 Buscamos y lanzamos el archivo submit spark junto al archivo que queremos ejecutar
 
