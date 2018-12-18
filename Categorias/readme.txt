@@ -1,5 +1,5 @@
 Requisitos
-Tener instalado espark 
+Tener instalado spark 
 Lanzarlo desde Linux (para que sea mas sencillo)
 Es necesario el fichero de datos games-features.csv
 
